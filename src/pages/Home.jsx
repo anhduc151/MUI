@@ -8,6 +8,8 @@ import Button from "@mui/material/Button";
 // import FormLabel from "@mui/material/FormLabel";
 // add styled custom hover element
 import { styled } from "@mui/material/styles";
+import CartInfo from "../features/cart/components/CartInfo";
+import ProductList from "../features/cart/components/ProductList";
 
 const Home = () => {
 //     const [value, setValue] = React.useState("female");
@@ -16,16 +18,17 @@ const Home = () => {
 //     setValue(event.target.value);
 //   };
 
-  const Div = styled("div")({
-    padding: "20px 20%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+//   const Div = styled("div")({
+//     padding: "20px 20%",
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//     minHeight: "100vh",
 
-    "&:hover": {
-      backgroundColor: "#e0e0e0",
-    },
-  });
+//     "&:hover": {
+//       backgroundColor: "#e0e0e0",
+//     },
+//   });
 
   const StyleButton = styled(Button)({
     "&:hover": {
@@ -35,7 +38,7 @@ const Home = () => {
   });
   return (
     <div>
-      <Div>
+      <div>
         {/* <StyleButton
           variant="contained"
           sx={{ marginTop: "5px", width: "200px", background: "blue" }}
@@ -60,7 +63,10 @@ const Home = () => {
             <FormControlLabel value="male" control={<Radio />} label="Male" />
           </RadioGroup>
         </FormControl> */}
-      </Div>
+
+        <ProductList />
+        <CartInfo />
+      </div>
     </div>
   );
 };
