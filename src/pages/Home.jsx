@@ -8,8 +8,8 @@ import Button from "@mui/material/Button";
 // import FormLabel from "@mui/material/FormLabel";
 // add styled custom hover element
 import { styled } from "@mui/material/styles";
-import CartInfo from "../features/cart/components/CartInfo";
-import ProductList from "../features/cart/components/ProductList";
+import CartInfo from "../cart/components/CartInfo";
+import ProductList from "../cart/components/ProductList";
 
 const Home = () => {
 //     const [value, setValue] = React.useState("female");

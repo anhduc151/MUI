@@ -13,7 +13,6 @@ function App() {
               <Route
                 key={index}
                 path={route.path}
-                // element={<Page />}
                 element={
                   <Page />
                 }

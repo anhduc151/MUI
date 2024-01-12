@@ -19,7 +19,6 @@ const ProductList = () => {
           <p key={product.id} className="product_list_li">
             {product.title}
             <button
-              style={{ marginLeft: "1rem" }}
               onClick={() => handleAddToCart(product)}
               className="list_btn"
             >
